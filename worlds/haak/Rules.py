@@ -76,7 +76,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("Disk", p, 40))
     set_rule(multiworld.get_location("neo_sanho_room_16_attackboost", p),
              lambda state: state.has("Disk", p, 50))
-    set_rule(multiworld.get_location("neo_sanho_bobo_photoofgenie", p),
+    set_rule(multiworld.get_location("neo_sanho_room_16_photoofgenie", p),
              lambda state: state.has("Disk", p, 50) and state.has("ThrustUp", p))
     set_rule(multiworld.get_location("neo_sanho_room_23_disk", p),
              lambda state: state.has("ThrustUp", p))
@@ -127,7 +127,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
     set_rule(multiworld.get_location("north_station_room_53_disk", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
-    set_rule(multiworld.get_location("north_station_room_67_intelectuals_spring", p),
+    set_rule(multiworld.get_location("north_station_room_67_intellectuals_spring", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
     set_rule(multiworld.get_location("north_station_room_58_piercing_hook", p),
              lambda state: state.has("KeyCard", p, 3) and state.has_all(["ProgressiveChargeAttack", "Deflection"], p))
@@ -391,7 +391,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
    #           lambda state: True)
     set_rule(multiworld.get_location("samurai", p),
              lambda state: True)
-    set_rule(multiworld.get_location("momoyama_room_64_dashslash", p),
+    set_rule(multiworld.get_location("anthony_hill_room_64_dashslash", p),
              lambda state: state.has("SamuraiDefeated", p))
     
     # Industry Zone

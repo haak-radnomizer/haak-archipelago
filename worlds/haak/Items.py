@@ -12,7 +12,7 @@ class ItemData(typing.NamedTuple):
     count: int = 1
 
 item_table: Dict[str, ItemData] = {
-    "KeyCard": ItemData(haakOffset, True, event=True),
+    "KeyCard": ItemData(haakOffset, True, event=False, count=0),
     # Abilities
     "Glove": ItemData(haakOffset+1, True, count=1),
     "ProgressiveChargeAttack": ItemData(haakOffset+2, True, count=3),
