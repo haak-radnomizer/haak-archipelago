@@ -27,7 +27,7 @@ class HaakLocation(Location):
 
 location_table_sanho_ruins = {
     # Sanho Ruins
-    "sanho_ruins_room_73_keycard": None,
+    "sanho_ruins_room_73_keycard": sanho_ruins_offset+1,
     "glove": sanho_ruins_offset+2,
     "sanho_ruins_room_60_disk": sanho_ruins_offset+3,
     "sanho_ruins_room_62_lifeshard": sanho_ruins_offset+4,
@@ -36,7 +36,7 @@ location_table_sanho_ruins = {
     "sanho_ruins_room_61_newspaper": sanho_ruins_offset+7,
     "sanho_ruins_room_74_hookspeed": sanho_ruins_offset+8,
     "sanho_ruins_room_53_firstaid": sanho_ruins_offset+9,
-    "sanho_ruins_room_58_keycard": None,
+    "sanho_ruins_room_58_keycard": sanho_ruins_offset+10,
     "sanho_ruins_room_58_disk": sanho_ruins_offset+11,
     "sanho_ruins_room_55_lifeshard": sanho_ruins_offset+12,
     "sanho_ruins_room_56_dash": sanho_ruins_offset+13,
@@ -79,7 +79,7 @@ location_table_neo_sanho = {
 
 location_table_north_station = {
     "north_station_room_58_tvmotherboard": north_station_offset,
-    "north_station_room_82_keycard": None,
+    "north_station_room_82_keycard": north_station_offset+1,
     "north_station_room_55_dye": north_station_offset+2,
     "north_station_room_48_lifeshard": north_station_offset+3,
     "north_station_room_63_disk": north_station_offset+4,
@@ -118,7 +118,7 @@ location_table_subway_tunnel = {
 }
 
 location_table_peoples_square = {
-    "peoples_square_room_80_keycard": None,
+    "peoples_square_room_80_keycard": peoples_square_offset,
     "peoples_square_room_63_disk": peoples_square_offset+1,
     "peoples_square_room_69_lifeshard": peoples_square_offset+2,
     "peoples_square_room_55_disk": peoples_square_offset+3,

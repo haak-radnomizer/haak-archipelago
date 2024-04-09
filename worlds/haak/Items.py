@@ -12,7 +12,7 @@ class ItemData(typing.NamedTuple):
     count: int = 1
 
 item_table: Dict[str, ItemData] = {
-    "KeyCard": ItemData(haakOffset, True, event=False, count=0),
+    "KeyCard": ItemData(haakOffset, True, event=False, count=4),
     # Abilities
     "Glove": ItemData(haakOffset+1, True, count=1),
     "ProgressiveChargeAttack": ItemData(haakOffset+2, True, count=3),
@@ -90,7 +90,7 @@ item_table: Dict[str, ItemData] = {
     "Hacking Device Manual": ItemData(haakOffset+71, False),
     "Daily Photo of Genie": ItemData(haakOffset+72, False),
     "Yoga Flyer": ItemData(haakOffset+73, False),
-    "How to win over Pretty Girls": ItemData(haakOffset+7, False),
+    "How to win over Pretty Girls": ItemData(haakOffset+74, False),
     "Report: Robot Virus": ItemData(haakOffset+75, False),
     "Torn Picture (Left)": ItemData(haakOffset+76, False),
     "Torn Picture (Right)": ItemData(haakOffset+77, False),
@@ -120,11 +120,14 @@ item_table: Dict[str, ItemData] = {
     # "sanho_ruins_room_49_switch_door": ItemData(None, True, event=True),
 }
 
-event_item_pairs: Dict[str, str] = {
+locked_item_pairs: Dict[str, str] = {
     "sanho_ruins_room_73_keycard": "KeyCard",
     "sanho_ruins_room_58_keycard": "KeyCard",
     "north_station_room_82_keycard": "KeyCard",
     "peoples_square_room_80_keycard": "KeyCard",
+}
+
+event_item_pairs: Dict[str, str] = {
     "merlin_pit_vent1": "Vent1",
     "merlin_pit_vent2": "Vent2",
     "merlin_pit_vent3": "Vent3",

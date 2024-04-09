@@ -1,7 +1,7 @@
 import string
 
 from BaseClasses import Entrance, Item, ItemClassification, Location, MultiWorld, Region, Tutorial
-from .Items import item_table, event_item_pairs
+from .Items import item_table, event_item_pairs, locked_item_pairs
 from .Locations import location_table
 from .Options import haak_options
 from .Regions import create_regions
@@ -29,7 +29,7 @@ class HaakWorld(World):
     option_definitions = haak_options
     game = "Haak"
     topology_present = False
-    data_version = 1
+    data_version = 0
     web = HaakWeb()
     required_client_version = (0, 4, 0)
 
@@ -47,6 +47,11 @@ class HaakWorld(World):
                 pool.append(item)
 
         self.multiworld.itempool += pool
+
+        # Locked Items
+        for location, item in locked_item_pairs.items():
+            item = HaakItem(item, self.player)
+            self.multiworld.get_location(location, self.player).place_locked_item(item)
 
         # Events
         for event, item in event_item_pairs.items():
