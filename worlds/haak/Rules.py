@@ -32,11 +32,11 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
     set_rule(multiworld.get_location("sanho_ruins_room_56_dash", p),
              lambda state: state.has("KeyCard", p, 2) and state.has("Glove", p))
     set_rule(multiworld.get_location("sanho_ruins_room_71_tvantenna", p),
-             lambda state: state.has("KeyCard", p, 2) and state.has("Glove", p))
+             lambda state: state.has("KeyCard", p, 2) and state.has_all(["Glove", "ProgressiveDash"], p))
     set_rule(multiworld.get_location("sanho_ruins_room_47_newspaper", p),
-             lambda state: state.has("KeyCard", p, 2) and state.has("Glove", p))
+             lambda state: state.has("KeyCard", p, 2) and state.has_all(["Glove", "ProgressiveDash"], p))
     set_rule(multiworld.get_location("sanho_ruins_room_47_hooklength", p),
-             lambda state: state.has("KeyCard", p, 2) and state.has("Glove", p))
+             lambda state: state.has("KeyCard", p, 2) and state.has_all(["Glove", "ProgressiveDash"], p))
     set_rule(multiworld.get_location("sanho_ruins_room_66_metalsniffer", p),
              lambda state: state.has("KeyCard", p, 2) and state.has_all(["Glove", "ProgressiveDivingThrust"], p))
     set_rule(multiworld.get_location("sanho_ruins_room_53_disk", p),
@@ -111,7 +111,9 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3))
     set_rule(multiworld.get_location("north_station_room_63_newspaper", p),
              lambda state: state.has("KeyCard", p, 3))
-    set_rule(multiworld.get_location("north_station_room_67_disk", p),
+    set_rule(multiworld.get_location("north_station_room_57_lifeshard", p),
+             lambda state: state.has("KeyCard", p, 3))
+    set_rule(multiworld.get_location("north_station_room_67_disk2", p),
              lambda state: state.has("KeyCard", p, 3))
     set_rule(multiworld.get_location("north_station_room_60_chargeattack", p),
              lambda state: state.has("KeyCard", p, 3))
@@ -121,7 +123,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p))
     set_rule(multiworld.get_location("north_station_room_87_lifeshard", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
-    set_rule(multiworld.get_location("north_station_room_82_disk", p),
+    set_rule(multiworld.get_location("north_station_room_82_disk2", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
     set_rule(multiworld.get_location("north_station_room_89_disk", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))

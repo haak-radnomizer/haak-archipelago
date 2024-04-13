@@ -84,12 +84,12 @@ location_table_north_station = {
     "north_station_room_48_lifeshard": north_station_offset+3,
     "north_station_room_63_disk": north_station_offset+4,
     "north_station_room_63_newspaper": north_station_offset+5,
-    "north_station_room_67_disk": north_station_offset+6,
+    "north_station_room_67_disk2": north_station_offset+6,
     "north_station_room_60_chargeattack": north_station_offset+7,
     "north_station_room_68_encryptednote": north_station_offset+8,
     "north_station_room_56_deflection": north_station_offset+9,
     "north_station_room_87_lifeshard": north_station_offset+10,
-    "north_station_room_82_disk": north_station_offset+11,
+    "north_station_room_82_disk2": north_station_offset+11,
     "north_station_room_89_disk": north_station_offset+12,
     "north_station_room_53_disk": north_station_offset+13,
     "north_station_room_67_intellectuals_spring": north_station_offset+14,
@@ -102,6 +102,7 @@ location_table_north_station = {
     "north_station_room_51_hooklength": north_station_offset+21,
     "north_station_room_76_disk": north_station_offset+22,
     "north_station_room_84_firstaideffect": peoples_square_offset+28,
+    "north_station_room_57_lifeshard": north_station_offset+29,
 }
 
 
