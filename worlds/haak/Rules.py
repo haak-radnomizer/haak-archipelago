@@ -7,7 +7,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
     # sanho_ruins
     set_rule(multiworld.get_location("sanho_ruins_room_73_keycard", p),
              lambda state: True)
-    set_rule(multiworld.get_location("glove", p),
+    set_rule(multiworld.get_location("sanho_ruins_room_62_glove", p),
              lambda state: state.has("KeyCard", p, 1))
     set_rule(multiworld.get_location("sanho_ruins_room_60_disk", p),
              lambda state: state.has("KeyCard", p, 1) and state.has("Glove", p))
@@ -76,7 +76,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("Disk", p, 40))
     set_rule(multiworld.get_location("neo_sanho_room_16_attackboost", p),
              lambda state: state.has("Disk", p, 50))
-    set_rule(multiworld.get_location("neo_sanho_room_16_photoofgenie", p),
+    set_rule(multiworld.get_location("neo_sanho_room_16_photo", p),
              lambda state: state.has("Disk", p, 50) and state.has("ThrustUp", p))
     set_rule(multiworld.get_location("neo_sanho_room_23_disk", p),
              lambda state: state.has("ThrustUp", p))
@@ -113,7 +113,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3))
     set_rule(multiworld.get_location("north_station_room_57_lifeshard", p),
              lambda state: state.has("KeyCard", p, 3))
-    set_rule(multiworld.get_location("north_station_room_67_disk2", p),
+    set_rule(multiworld.get_location("north_station_room_67_disk", p),
              lambda state: state.has("KeyCard", p, 3))
     set_rule(multiworld.get_location("north_station_room_60_chargeattack", p),
              lambda state: state.has("KeyCard", p, 3))
@@ -123,7 +123,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p))
     set_rule(multiworld.get_location("north_station_room_87_lifeshard", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
-    set_rule(multiworld.get_location("north_station_room_82_disk2", p),
+    set_rule(multiworld.get_location("north_station_room_82_disk", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
     set_rule(multiworld.get_location("north_station_room_89_disk", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
@@ -131,7 +131,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
     set_rule(multiworld.get_location("north_station_room_67_intellectuals_spring", p),
              lambda state: state.has("KeyCard", p, 3) and state.has("ProgressiveChargeAttack", p) and state.has("Deflection", p))
-    set_rule(multiworld.get_location("north_station_room_58_piercing_hook", p),
+    set_rule(multiworld.get_location("north_station_room_58_piercinghook", p),
              lambda state: state.has("KeyCard", p, 3) and state.has_all(["ProgressiveChargeAttack", "Deflection"], p))
     set_rule(multiworld.get_location("north_station_room_84_firstaideffect", p),
              lambda state: state.has("KeyCard", p, 3) and state.has_all(["ProgressiveChargeAttack", "Deflection", "ProgressiveDivingThrust"], p)
@@ -273,7 +273,7 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
              lambda state: True)
     set_rule(multiworld.get_location("brewery_room_82_dessertrecipe", p),
              lambda state: True)
-    set_rule(multiworld.get_location("brewery_room_82_brewerynote", p),
+    set_rule(multiworld.get_location("brewery_room_82_note", p),
              lambda state: True)
     set_rule(multiworld.get_location("brewery_room_35_powerdivingthrust", p),
              lambda state: True)
@@ -416,35 +416,35 @@ def set_rules(options: PerGameCommonOptions, multiworld: MultiWorld, p: int):
     set_rule(multiworld.get_location("subway_depot_room_110_poster", p),
              lambda state: state.has("Hacker", p) and state.has("ProgressiveSwordWaves", p, 2) and state.has("ProgressiveDash", p, 2))
     
-    # Emperors Tower
-    set_rule(multiworld.get_location("emperors_tower_room_155_manual", p),
+    # Emperor Tower
+    set_rule(multiworld.get_location("emperor_tower_room_155_manual", p),
              lambda state: state.has("DashSlash", p) and (state.has("ThrustUp", p) or state.has("ProgressiveDash", p, 3)))
-    set_rule(multiworld.get_location("emperors_tower_room_130_letter", p),
+    set_rule(multiworld.get_location("emperor_tower_room_130_letter", p),
              lambda state: state.has("DashSlash", p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_101_lifeshard", p),
+    set_rule(multiworld.get_location("emperor_tower_room_101_lifeshard", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves"], p) and state.has("ProgressiveDash", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_133_photo", p),
+    set_rule(multiworld.get_location("emperor_tower_room_133_photo", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves", "Hacker", "DashSlash"], p) and state.has("ProgressiveDash", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_140_newspaper", p),
+    set_rule(multiworld.get_location("emperor_tower_room_140_newspaper", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves", "Hacker", "DashSlash", "ThrustUp"], p) and state.has("ProgressiveDash", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_142_dashdamage", p),
+    set_rule(multiworld.get_location("emperor_tower_room_142_dashdamage", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves", "Hacker", "DashSlash", "ThrustUp"], p) and state.has("ProgressiveDash", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_143_disk", p),
+    set_rule(multiworld.get_location("emperor_tower_room_143_disk", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves", "Hacker", "DashSlash", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4)
                and state.has("EnergyShard", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_154_tape", p),
+    set_rule(multiworld.get_location("emperor_tower_room_154_tape", p),
              lambda state: state.has_all(["Glide", "ProgressiveSwordWaves", "Hacker", "DashSlash", "ThrustUp"], p) and state.has("ProgressiveDash", p, 3))
-    set_rule(multiworld.get_location("emperors_tower_room_127_report", p),
+    set_rule(multiworld.get_location("emperor_tower_room_127_report", p),
              lambda state: state.has_all(["DashSlash", "Hacker"], p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_127_critrate", p),
+    set_rule(multiworld.get_location("emperor_tower_room_127_critrate", p),
              lambda state: state.has_all(["DashSlash", "Hacker"], p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_146_dye", p),
+    set_rule(multiworld.get_location("emperor_tower_room_146_dye", p),
              lambda state: state.has_all(["DashSlash", "Glide", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_146_lifeshard", p),
+    set_rule(multiworld.get_location("emperor_tower_room_146_lifeshard", p),
              lambda state: state.has_all(["DashSlash", "Glide", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_151_disk", p),
+    set_rule(multiworld.get_location("emperor_tower_room_151_disk", p),
              lambda state: state.has_all(["DashSlash", "Glide", "Hacker", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4))
-    set_rule(multiworld.get_location("emperors_tower_room_149_developerlog", p),
+    set_rule(multiworld.get_location("emperor_tower_room_149_devlog", p),
              lambda state: state.has_all(["DashSlash", "Glide", "Hacker", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4))
     set_rule(multiworld.get_location("gael", p),
              lambda state: state.has_all(["DashSlash", "Glide", "Hacker", "ThrustUp"], p) and state.has("ProgressiveDash", p, 4))
